@@ -14,7 +14,7 @@ class Domain:
         self.creation_date = str_to_date(data['creation_date'][0])
         self.expiration_date = str_to_date(data['expiration_date'][0])
         self.last_updated = str_to_date(data['updated_date'][0])
-
+        self.registrant = data['registrant'][0].strip()
         # name_servers
         tmp = []
 
